@@ -18,8 +18,7 @@ public class DBconnector {
         try {
             return DriverManager.getConnection(url, USER, PASS);
         } catch (SQLException e) {
-            System.out.println("Erro na conexión: " + e.getMessage());
-            return null;
+            throw new RuntimeException("Erro na conexión: " + e.getMessage(), e);
         }
     }
 }

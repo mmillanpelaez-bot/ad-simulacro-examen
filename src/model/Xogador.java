@@ -1,3 +1,5 @@
+package model;
+
 import java.io.Serializable;
 
 
@@ -32,7 +34,7 @@ public class Xogador implements Serializable {
 
     @Override
     public String toString() {
-        return "Xogador{" +
+        return "model.Xogador{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", posicion='" + posicion + '\'' +

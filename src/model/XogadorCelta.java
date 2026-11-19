@@ -1,3 +1,5 @@
+package model;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -34,7 +36,7 @@ public class XogadorCelta implements Serializable {
 
     @Override
     public String toString() {
-        return "XogadorCelta{" +
+        return "model.XogadorCelta{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", soldo=" + soldo +
